@@ -1,0 +1,10 @@
+/* Default inserted images to inline and align left, with text wrap */
+.fr-view img.fr-dii { 
+  display: inline-block;
+  float: left;
+  vertical-align: bottom;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 20px;
+  max-width: calc(100% - 10px)
+}

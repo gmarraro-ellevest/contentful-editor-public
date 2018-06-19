@@ -1,0 +1,41 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <title>Contentful Editor</title>
+        <link rel="stylesheet" type='text/html' href="/font-awesome/css/font-awesome.min.css">
+        <!-- Contentful's default styles -->
+        <link rel="stylesheet" type="text/css" href="https://unpkg.com/contentful-ui-extensions-sdk@3/dist/cf-extension.css">
+        <!-- UI Extensions SDK -->
+        <script src="https://unpkg.com/contentful-ui-extensions-sdk@3"></script>
+
+        <style>
+            body {
+                margin: 0;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                overflow: visible;
+            }
+            #app, #preview {
+                outline: 0;
+                padding: 1em;
+                margin-top: -1px;
+                margin-bottom: -1px;
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='app'></div>
+        <div id="preview" class="fr-view"></div>
+        <script src='./bundle.js'>
+            window.contentfulExtension.init(function (extension) {con
+                var value = extension.field.getValue()
+                extension.field.setValue("Hello world!")
+                extension.window.startAutoResizer();
+            })
+        </script>
+    </body>
+</html>

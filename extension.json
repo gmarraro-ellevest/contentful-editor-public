@@ -1,0 +1,6 @@
+{
+  "id": "contentful-editor",
+  "name": "Contentful Ellevest Editor v2",
+  "src": "http://localhost:8080",
+  "fieldTypes": ["Text"]
+}
